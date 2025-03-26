@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-﻿
-=======
 ﻿# ---------- Build Stage ----------
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
@@ -23,4 +20,3 @@ EXPOSE 80
 
 # Start the app
 ENTRYPOINT ["dotnet", "ConnectDb.dll"]
->>>>>>> 28f463046624c4db1bec09d8cf03db5391cd45d2
