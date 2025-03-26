@@ -14,7 +14,22 @@ var app = builder.Build();
 
 
 
-app.MapGet("/", () => "Hello Welcome search Students!");
+// app.MapGet("/", () => "Hello Welcome search Students!");
+
+app.MapGet("/", () => Results.Text(@"
+ Welcome to the Student Records API!
+Endpoints:
+
+ GET    /students           → Get all students
+ GET    /students/{id}      → Get student by ID
+POST   /students            → Add a new student (JSON body: { ""name"": ""Student Name"" })
+ PUT    /students/{id}      → Update student (JSON body: { ""name"": ""New Name"" })
+DELETE /students/{id}      → Delete a student
+
+
+Created by @Aditya Srivastava
+
+", "text/plain"));
 
 
 app.MapGet("/students", async (AppDbContext db) =>
