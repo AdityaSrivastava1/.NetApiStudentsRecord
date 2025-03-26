@@ -2,7 +2,7 @@
   - type: web
     name: connect-db-api
     runtime: docker
-    repo: https://github.com/AdityaSrivastava1/.NETAPI-students-.git
+    repo: https://github.com/AdityaSrivastava1/.NetApiStudentsRecord.git
     branch: main
     plan: free
     region: oregon
