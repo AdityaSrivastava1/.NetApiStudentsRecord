@@ -1,0 +1,9 @@
+﻿services:
+  - type: web
+    name: connect-db-api
+    runtime: docker
+    repo: https://github.com/AdityaSrivastava1/.NETAPI-students-.git
+    branch: main
+    plan: free
+    region: oregon
+    autoDeploy: true
